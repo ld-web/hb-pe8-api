@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Users</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <form action="">
+      <input type="text" name="name" id="name" />
+      <input type="submit" value="Enregistrer" />
+    </form>
+
+    <script type="module">
+      import { getUsers, populateRoot } from "./app.js";
+
+      const users = await getUsers();
+      populateRoot(users);
+    </script>
+  </body>
+</html>
