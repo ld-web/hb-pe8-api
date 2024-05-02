@@ -15,6 +15,8 @@ $users = getUsers();
 </head>
 
 <body>
+    <form action=""></form>
+
     <div class="flex gap-2 flex-wrap">
         <?php foreach ($users as $user) { ?>
         <div class="border-2 p-2">
